@@ -1587,8 +1587,16 @@ print(twDate_reformat)
 lubridate::ymd(twDate_reformat)
 ```
 
+##字元模板
 
+```{r}
 
+library(stringr)
+library(glue)
+str_extract_all(
+  "我的名字8293叫17380小abce明",
+  "[\u4E00-\u9FFF]+")
+```
 
 
 
